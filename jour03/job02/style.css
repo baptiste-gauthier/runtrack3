@@ -1,0 +1,14 @@
+.rangees, .melangees {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    justify-content: center;
+    width: 70%; 
+    margin: 20px auto;
+    padding : 20px; 
+}
+
+.rangees div {
+    
+    margin: 2px ; 
+}
