@@ -1,17 +1,38 @@
-<?php
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscription</title>
+    </head>
+    <body>
+        
+    <form method="POST">
+        <label for="nom"> Nom : </label>
+        <input type="text" name="nom" id="nom">
 
-var_dump($_POST); 
-$nom = $_POST['nom']; 
-$prenom = $_POST['prenom']; 
-$pass = $_POST['pass']; 
-$email = $_POST['mail']; 
+        </br>
 
-$bdd = new PDO('mysql:host=localhost;dbname=utilisateurs', 'root', '');
-$sql = "INSERT INTO utilisateurs (nom,prenom,email,password) VALUES ('$nom','$prenom','$email','$pass')";
-var_dump($sql);
-$requete = $bdd->prepare($sql); 
+        <label for="prenom"> Prenom : </label>
+        <input type="text" name="prenom" id="prenom">
 
-if($requete->execute())
-    echo 'Bravo '.$_POST['prenom'].'! Vous ête inscris</br>' ; 
-else
-    echo 'erreur dans le système !'; 
+        </br>
+
+        <label for="mail"> Email : </label>
+        <input type="texte" name="mail" id="mail">
+
+        </br>
+
+        <label for="pass"> Mot de passe : </label>
+        <input type="password" name="pass" id="pass">
+
+        </br>
+
+        <input type="button" value="Envoyer" id="button_inscription">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+    </html>
