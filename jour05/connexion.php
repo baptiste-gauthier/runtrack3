@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -21,6 +22,9 @@
 
         <input type="button" value="Envoyer" id="button_connexion">
     </form>
+
+    <p class="message" id="error"></p> 
+    <p class="message" id="connecte"></p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>

@@ -1,0 +1,8 @@
+#error,#error_pass,#error_mail,#error_admin {
+    color: rgb(248, 62, 62);
+}
+
+#connecte,#success {
+    color: rgb(123, 248, 123);
+}
+

@@ -4,14 +4,34 @@
 $nom = $_POST['nom']; 
 $prenom = $_POST['prenom']; 
 $pass = $_POST['pass']; 
+$confirm_pass = $_POST['confirm_pass']; 
 $email = $_POST['mail']; 
 
 $bdd = new PDO('mysql:host=localhost;dbname=utilisateurs', 'root', '');
 $sql = "INSERT INTO utilisateurs (nom,prenom,email,password) VALUES ('$nom','$prenom','$email','$pass')";
 //var_dump($sql);
-$requete = $bdd->prepare($sql); 
 
-if($requete->execute())
-    echo 'Bravo '.$_POST['prenom'].'! Vous ête inscris' ; 
-else
-    echo 'erreur dans le système !'; 
+if(!empty($nom) && !empty($prenom) && !empty($pass) && !empty($email))
+{
+    if($pass == $confirm_pass)
+    {
+        if(filter_var($email, FILTER_VALIDATE_EMAIL))
+        {
+            $requete = $bdd->prepare($sql); 
+
+            if($requete->execute())
+                echo 'success' ; 
+            else
+                echo 'error_admin'; 
+        }
+        else{
+            echo'error_mail'; 
+        }
+    }
+    else{
+        echo 'error_pass'; 
+    }
+}
+else{
+    echo 'error_champs_vide'; 
+}

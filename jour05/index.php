@@ -1,3 +1,5 @@
+<?php session_start() ; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +9,12 @@
     <title>Job05</title>
 </head>
 <body>
+
+    <?php if(isset($_SESSION['prenom']))
+    {
+        echo 'Bonjour '.$_SESSION['prenom'] ; 
+    }
+    ?>
 
     <a href="inscription.php" id = "inscription"> Inscription </a>
 

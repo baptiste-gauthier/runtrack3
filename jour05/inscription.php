@@ -5,6 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Inscription</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     </head>
     <body>
         
@@ -29,8 +32,19 @@
 
         </br>
 
+        <label for="confirm_pass"> Confirmation du mot de passe : </label>
+        <input type="confirm_password" name="confirm_pass" id="confirm_pass">
+
+        </br>
+
         <input type="button" value="Envoyer" id="button_inscription">
     </form>
+
+    <p class="message" id="error_pass"></p>
+    <p class="message" id="error_mail"></p>
+    <p class="message" id="error_admin"></p>
+    <p class="message" id="error_champs_vide"></p>
+    <p class="message" id="success"></p>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>

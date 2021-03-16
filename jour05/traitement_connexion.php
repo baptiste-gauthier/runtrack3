@@ -1,11 +1,13 @@
 <?php
 
+session_start(); 
+
 $pass = $_POST['pass']; 
 $email = $_POST['mail']; 
 
 $bdd = new PDO('mysql:host=localhost;dbname=utilisateurs', 'root', '');
 
-$requete = $bdd->prepare("SELECT email,password 
+$requete = $bdd->prepare("SELECT email,password,prenom
                             FROM utilisateurs 
                                 WHERE email = :email
                                     AND password = :pass"
@@ -22,9 +24,10 @@ $result = $requete->fetch(PDO::FETCH_ASSOC);
 
 if($result)
 {
-    echo 'bravo vous ete connecté ' ; 
+    echo 'connecte' ; 
+    $_SESSION['prenom'] = $result['prenom']; 
 }
 else{
-    echo 'Mot de passe ou login incorrect' ; 
+    echo 'erreur' ; 
 }
 
