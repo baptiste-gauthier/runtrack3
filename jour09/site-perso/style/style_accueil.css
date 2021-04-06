@@ -1,0 +1,569 @@
+section {
+    padding: 20px 50px;
+}
+
+.contenu_header {
+    position: fixed;
+}
+
+main {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+html, body {
+    max-height: 100% ; 
+}
+
+.scrool_container {
+    max-height: 100% ; 
+}
+
+
+/* ------------------------------------------CSS PAGE D'ACCUEIL---------------------------------------------------*/
+
+#pres {
+    background-image: url(../images/tim-lippis-_KaUzobEbHc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
+.contenu_pres {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white ; 
+    height: 100%;
+
+}
+
+.btn_mon_travail {
+    padding: 10px;
+    margin: 30px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    border : 3px solid white ; 
+    text-transform: uppercase;
+    font-weight: 500 ;
+    transition: .8s;
+    /* transform: translateY(100px);  */
+}
+
+.btn_mon_travail:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #b97381;
+}
+
+.btn_mon_travail:after {
+    content: "\1F872";
+    padding: 5px;
+    margin: 0px 5px;
+    display: inline-block;
+    transition: .3s;
+}
+
+.btn_mon_travail:hover:after {
+    transform: rotate(90deg);
+    /* transition: .2s; */
+} 
+ 
+.contenu_pres h1,p {
+    padding: 10px;
+}
+
+.contenu_pres span {
+    color: #161629;
+}
+
+.contenu_pres h1 {
+    font-size: 3vw;
+}
+
+.contenu_pres p {
+    font-size: 1.3vw;
+    text-align: center;
+    /* transform: translateY(100px);  */
+    
+}
+
+/* ------------------------------------------CSS PAGE A PROPOS---------------------------------------------------*/
+/* #about {
+    height: 100vh;
+} */
+.contenu_about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.contenu_about > div {
+    width: 50% ; 
+}
+
+.image {
+    width : 50% ; 
+    margin: auto;
+    padding: 10px;
+}
+
+.image img {
+    width : 100% ; 
+}
+
+.titre {
+    width : 80% ; 
+    margin: 40px auto;
+    padding : 20px  ;
+    text-align: center;
+    font-size: 3vw;
+    color: #1f1f3c;
+    display: flex;
+    align-items: center;
+}
+
+.rs ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width: 100% ; 
+}
+
+.rs li {
+    padding: 10px;
+}
+
+i {
+    width : 100% ; 
+    color: rgb(0, 0, 0);
+    padding: 5px;
+}
+
+.titre::after,.titre::before {
+    content: "";
+    display: block ; 
+    height: 0.5vh;
+    width: 20% ; 
+    margin: auto;
+    background : #1f1f3c ;
+    border-radius: 2em;
+}
+
+.description div {
+    width: 95%;
+    margin: auto;
+    
+}
+
+.description h2 {
+    font-size: 2em;
+    padding: 20px 10px;
+}
+/* ------------------------------------------CSS PAGE GALERIE---------------------------------------------------*/
+
+.contenu_portfolio {
+    height: 100%;
+}
+
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100% ;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    padding: 30px;
+    
+}
+
+.vignette {
+    width : 30% ; 
+    height: 35vh ; 
+    transition: .3s;
+    margin: 10px;
+    background-size: cover ;
+    background-repeat: no-repeat;
+}
+
+.vignette div {
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #241f3ca8;
+    margin: 0px;
+    opacity: 0;
+    transition: .3s;
+    font-weight: 700;
+    color: white;
+}
+
+.vignette div:hover {
+    opacity: 1;
+    
+}
+
+
+ .forum  {
+    background-image: url(../images/3-0.jpg);
+}
+
+.voyage {
+    background-image: url("../images/1-0.jpg");
+
+}
+
+.reser {
+    background-image: url("../images/2-0.jpg");
+
+}
+
+.boutique {
+    background-image: url("../images/4-0.jpg");
+}
+ 
+.tri {
+    width: 90%; 
+    margin: auto;
+}
+.tri ul {
+    display: flex;
+    list-style: none;
+}
+
+.tri li {
+    padding: 10px ; 
+    text-align: center;
+}
+
+.tri ul li:nth-child(1) {
+    border: 2px solid #b97381;
+    color: #b97381;
+    margin-right: 10px;
+}
+
+.tri ul li:nth-child(2) {
+    border: 2px solid #1f1f3c;
+    color: #1f1f3c;
+}
+/* ------------------------------------------CSS PAGE SKILLS---------------------------------------------------*/
+.contenu_skills{
+    display: flex;
+    width: 90% ; 
+    margin: auto ; 
+    justify-content: center;
+    align-items: center;
+}
+.contenu_skills div img {
+    width:100% ; 
+}
+
+.contenu_skills div {
+    width : 10% ; 
+    padding: 20px ;
+}
+
+/* ------------------------------------------CSS PAGE CONTACT---------------------------------------------------*/
+
+#contact {
+    background-color: #1F1E3D;
+   
+}
+#contact .titre {
+    color: white;
+}
+
+.contenu_contact {
+    height:100% ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contenu_contact i {
+    color: white;
+}
+
+#contact h1::before,#contact h1::after {
+    background : white ;
+}
+
+.redirection_top {
+    margin-top: 20px ; 
+}
+
+#link_page{
+    width : 100% ; 
+}
+
+#projet_flex{
+    position : fixed ;
+    top : 0 ; 
+    z-index: 5;
+    width: 100%;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100%;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+#projet_flex::-webkit-scrollbar {
+    display: none ; 
+}
+
+
+/* css visible en js */
+
+.vue {
+    transform: translateX(0);
+    opacity: 1 ;
+    transition: transform 0.7s, opacity 0.7s;  
+}
+
+.vue.not-visible {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+/* responsive */ 
+
+@media screen and (max-width: 426px) {
+
+    .contenu_pres{
+        width: 100%;
+    }
+
+    .message p {
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    #message_hello span {
+        font-size: 5vw !important;
+        font-weight: 800;
+    }
+
+    .bouton button {
+        font-size: 2.5vw;
+    }
+
+    .content_des h2 {
+        font-size: 6vw ; 
+    }
+
+    .content_des p {
+        font-size: 4.5vw !important; 
+    }
+    .vignette {
+        width : 100% ; 
+    }
+    .contenu_skills div {
+        width : 20%; 
+        padding: 2px !important;
+    }
+    section{
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 426px ) and (max-width: 1024px) {
+    .contenu_about {
+        flex-direction: column;
+        align-items: center;
+        /* height: 100%; */
+        flex-wrap: nowrap;
+    }
+    .content_des{
+        font-size : 1.4vw ; 
+    }
+    .image{
+        padding: 70px;
+    }
+
+    .contenu_about > div {
+        width: 90%;
+    }
+
+    .message{
+        text-align: center; 
+    }
+
+    .message h1 {
+        font-size: 4vw; 
+    }
+
+    .message p {
+        font-size: 2.4vw; 
+    }
+    #message_hello span {
+        font-size: 5vw !important;
+        font-weight: 800;
+    }
+    .vignette {
+        width : 60% ; 
+    }
+    .contenu_skills div {
+        width : 50% ; 
+        padding: 5px ;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .contenu_about {
+        flex-direction: column;
+        align-items: center;
+        /* height: 100%; */
+        flex-wrap: nowrap;
+    }
+
+    .contenu_about > div {
+        width: 95%;
+    }
+
+    .image{
+        padding: 30px;
+    }
+
+    .content_des h2 {
+        font-size: 6vw ; 
+    }
+
+    .content_des p {
+        font-size: 3.3vw ; 
+    }
+
+    .rs div{
+        width: 15% !important ; 
+    }
+    .titre {
+        font-size: 5vh ; 
+    }
+
+}
+
+@media screen and (min-width: 2559px) {
+    .content_des h2 {
+        font-size : 2vw ; 
+    }
+    .content_des p{
+        font-size : 1vw ; 
+    }
+    .contenu_header ul li {
+        font-size : 1.2vw ;
+    }
+    .btn_mon_travail {
+        font-size : 1vw ;
+        padding: 30px;
+    }
+}
+
+/* css cursor */
+
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+  }
+  .cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background-color : #b97381 ; 
+  }
+  .cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+}
+
+/* css hello */ 
+
+#message_hello {
+    width: 100% ; 
+    margin : auto ; 
+    text-align: center;
+    transform: translateY(-100px);
+}
+#message_hello span {
+    font-size: 3.5vw;
+    font-weight: 700;
+    padding: 0px 1.5px 0px 1.5px;
+    transition: .6s;
+    display: inline-block;
+}
+
+#message_hello span:hover{
+    color: #ffffff;
+}
+
+.slide-bottom {
+	-webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2021-3-23 11:29:38
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation slide-bottom
+ * ----------------------------------------
+ */
+ @-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0;
+              /* color: white; */
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+              opacity: 1;
+              /* color: #b97381; */
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0;
+              /* color: white; */
+    }
+    100% {
+      -webkit-transform: translateY(100px);
+              transform: translateY(100px);
+              opacity: 1;
+              /* color: #b97381; */
+    }
+  }
+  
+  
+
+
+

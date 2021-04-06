@@ -1,0 +1,168 @@
+
+header {
+    position: initial;
+    z-index: initial;
+    background-color: #0e0e1b;
+}
+
+#projet {
+    background-color: #0e0e1b;
+    color: white;
+}
+
+.contenu_projet {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.contenu_projet > div {
+    width: 50%;
+}
+
+.screen {
+    overflow: auto;
+    height : 100vh ;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.screen div img {
+    width: 100% ; 
+    object-fit: cover;
+}
+
+.screen::-webkit-scrollbar {
+    display: none ; 
+}
+
+.screen div {
+    width: 80% ;
+    margin: 10px auto; 
+    padding: 20px;
+}
+
+.contenu_projet form button {
+    background-color: #b97381;
+    padding: 10px;
+    border-radius: 2em ;
+    border : none ; 
+    color : white ; 
+}
+
+.contenu_projet h2,.contenu_projet h3,.contenu_projet p {
+    padding: 20px;
+    line-height: 2em;
+}
+
+.contenu_projet h2 {
+    font-size: 3em;
+}
+
+.description {
+    padding: 50px;
+}
+
+form[action="liste-naissance.html"] {
+    display: flex;
+    justify-content: center;
+}
+
+form[action="liste-naissance.html"] button:hover {
+    background-color: white;
+    color:  #b97381;
+    transition: .1s;
+    cursor: pointer;
+}
+
+/* bouton burger */
+
+.b_burger {
+    width: 50px;
+    height: 50px;
+
+    background-color: rgba(255, 10, 10, 0);
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+.trait {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 3px ; 
+    background-color: white;
+    display: block;
+    transition: transform 0.3s ease-in;
+}
+
+.trait_1 {
+    transform: translateY(-10px);
+}
+
+.trait_2 {
+
+    transform: translateY(+10px);
+}
+
+.b_burger:hover .trait_1 {
+    transform: translateY(0) rotate(135deg) ;
+}
+
+.b_burger:hover .trait_2 {
+    transform: translateY(0) rotate(-135deg) ;
+}
+
+/* responsive */
+
+@media screen and (max-width: 1024px){
+
+    .contenu_projet {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+    }
+
+    .contenu_projet > div {
+        width: 100%;
+    }
+
+    .description{
+        order : 1
+    }
+    .screen{
+        order: 2;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    #projet{
+        padding: 10px 20px;
+    }
+    .description{
+        padding: 10px;
+    }
+}
+
+@media screen and (min-width: 2559px) {
+
+    .description h2 {
+        font-size: 3vw;
+    }
+    .description h3{
+        font-size: 2vw;
+    }
+    .description p,.description button {
+        font-size: 1.2vw ;
+    }
+}
+
+
