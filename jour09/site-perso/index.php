@@ -139,28 +139,28 @@
             <h1 class="titre"> Skills </h1>
             <article class="contenu_skills vue">
                 <div class="logo">
-                    <img src="images/logo_html.png" alt="logo_php">
+                    <img src="images/logo_html.png" alt="logo_html">
                 </div>
                 <div class="logo">
-                    <img src="images/logo_css.png" alt="logo_php">
+                    <img src="images/logo_css.png" alt="logo_css">
                 </div>
                 <div class="logo">
-                    <img src="images/sass.png" alt="logo_php">
+                    <img src="images/sass.png" alt="logo_sass">
                 </div>
                 <div class="logo">
                     <img src="images/logo_php.png" alt="logo_php">
                 </div>
                 <div class="logo">
-                    <img src="images/JavaScript-logo.png" alt="logo_php">
+                    <img src="images/JavaScript-logo.png" alt="logo_javascript">
                 </div>
                 <div class="logo">
-                    <img src="images/jquery.png" alt="logo_php">
+                    <img src="images/jquery.png" alt="logo_jquery">
                 </div>
                 <div class="logo">
-                    <img src="images/kisspng-microsoft-azure-sql-database-microsoft-sql-server-database-5abeaece9df699.271102961522446030647.png" alt="logo_php">
+                    <img src="images/kisspng-microsoft-azure-sql-database-microsoft-sql-server-database-5abeaece9df699.271102961522446030647.png" alt="logo_sql">
                 </div>
                 <div class="logo">
-                    <img src="images/bootstrap.png" alt="logo_php">
+                    <img src="images/bootstrap.png" alt="logo_bootstrap">
                 </div>
             </article>
         </section>
