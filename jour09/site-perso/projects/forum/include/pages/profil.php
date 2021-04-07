@@ -18,7 +18,7 @@
                 if(($_POST['pass'] == $_POST['confirm_pass']) && (preg_match('#^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).{8,}$#',$_POST['pass'])))
                 {
                     $user = new Utilisateur($login,$password,$nom,$prenom,$age,$id_droit);
-                    $bdd = $user->connexionBdd("forum", "root","");
+                    $bdd = $user->connexionBdd("baptiste-gauthier_forum", "bapt_forum","Forum13390!");
 
 
                     if(isset($_FILES['avatar']) AND !empty($_FILES['avatar']['name'])) {

@@ -2,7 +2,7 @@
 
     function setProfile(int $droit , $login)
     {
-        $connexion = new PDO('mysql:host=localhost;dbname=forum','root','');
+        $connexion = new PDO('mysql:host=localhost;dbname=baptiste-gauthier_forum','bapt_forum','Forum13390!');
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION) ;
 
         $requete = $connexion->prepare("UPDATE utilisateurs
