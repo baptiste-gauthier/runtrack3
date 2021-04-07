@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
+    <meta name="description" content="Baptiste GAUTHIER, étudiant dans le développement web Front End & Back End à l'école de La Plateforme_ à Marseille. Venez découvrir mon portfolio, en recherche d'alternance pour septembre 2021.">
     <link rel="stylesheet" href="style/style_accueil.css">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/hover.css">
@@ -25,7 +26,7 @@
         <article class="contenu_header">
 
             <ul>
-                <i class="fa fa-bars" id="burger"></i>
+                <li><i class="fa fa-bars" id="burger"></i></li>
                 <li id="li_about" class="lien_header">About</li>
                 <li id="li_portfolio" class="lien_header">Portfolio</li>
                 <li id="li_contact" class="lien_header">Contact</li>
@@ -81,9 +82,9 @@
 
                     <div class="rs">
                         <ul>
-                            <a href="https://www.instagram.com/?hl=fr"><li><i class="fa fa-instagram fa-lg"></i></li></a>
-                            <a href="https://www.facebook.com/"><li><i class="fa fa-facebook fa-lg"></i></li></a>
-                            <a href="https://fr.linkedin.com/"><li><i class="fa fa-linkedin fa-lg"></i></li></a>
+                            <li><a href="https://www.instagram.com/?hl=fr"><i class="fa fa-instagram fa-lg"></i></a></li>
+                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                            <li><a href="https://fr.linkedin.com/"><i class="fa fa-linkedin fa-lg"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -104,26 +105,26 @@
                 <div class="galerie">
 
                     
-                    <div class="vignette voyage" id="vignette_link">
+                    <div class="vignette voyage">
                         <div class="bloc_click">
                             voir le projet
                         </div>
                     </div>
 
                     
-                    <div class="vignette reser" id="vignette_link">
+                    <div class="vignette reser">
                         <div class="bloc_click">
                             voir le projet
                         </div>
                     </div>
                     
-                    <div class="vignette forum" id="vignette_link">
+                    <div class="vignette forum">
                         <div class="bloc_click">
                             voir le projet
                         </div>
                     </div>
 
-                    <div class="vignette boutique" id="vignette_link">
+                    <div class="vignette boutique">
                         <div class="bloc_click">
                             voir le projet
                         </div>
@@ -174,7 +175,7 @@
                 <p>
                     <a class="github-button" href="https://github.com/baptiste-gauthier" aria-label="Github">GitHub</a>
                 </p>
-                <a href="#link_header"class="animate__animated animate__bounce animate__infinite redirection_top""><i class="fa fa-arrow-up"></i></a>
+                <a href="#link_header" class="animate__animated animate__bounce animate__infinite redirection_top"><i class="fa fa-arrow-up"></i></a>
             </article>
         </section>
         
