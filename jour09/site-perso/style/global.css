@@ -107,6 +107,11 @@ header a {
 
     .contenu_header ul i {
         display: block;
+        padding: 10px;
+        
+    }
+    #li_burger::after {
+        display: none;
     }
 
 }

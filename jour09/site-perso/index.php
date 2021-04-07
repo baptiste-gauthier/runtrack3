@@ -26,7 +26,7 @@
         <article class="contenu_header">
 
             <ul>
-                <li><i class="fa fa-bars" id="burger"></i></li>
+                <li id="li_burger"><i class="fa fa-bars" id="burger"></i></li>
                 <li id="li_about" class="lien_header">About</li>
                 <li id="li_portfolio" class="lien_header">Portfolio</li>
                 <li id="li_contact" class="lien_header">Contact</li>
