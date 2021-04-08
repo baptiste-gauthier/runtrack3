@@ -170,6 +170,22 @@ i {
     font-size: 2em;
     padding: 20px 10px;
 }
+
+li #btn_cv {
+    text-transform: uppercase;
+    color: #161629;
+    background-color: transparent;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #161629;
+    font-size: 1vw;
+    transition: .2s;
+}
+li #btn_cv:hover{
+    background-color: #161629;
+    color: white;
+}
+
 /* ------------------------------------------CSS PAGE GALERIE---------------------------------------------------*/
 
 .contenu_portfolio {
@@ -296,6 +312,11 @@ i {
 
 .contenu_contact i {
     color: white;
+}
+
+.contenu_contact h2,.contenu_about h2 
+{
+    padding: 15px;
 }
 
 #contact h1::before,#contact h1::after {
@@ -455,6 +476,9 @@ i {
     .titre {
         font-size: 5vh ; 
     }
+    li #btn_cv{
+        font-size: 2vw;
+    }
 
 }
 
@@ -466,7 +490,7 @@ i {
         font-size : 1vw ; 
     }
     .contenu_header ul li {
-        font-size : 1.2vw ;
+        font-size : 1vw ;
     }
     .btn_mon_travail {
         font-size : 1vw ;

@@ -40,7 +40,7 @@ class Vue {
                         </p>
                         <p> <?= $value['equipe'] ; ?> </p>
                         <form action="projects/<?= $value['lien']; ?>">
-                            <button> Visiter le site</button>
+                            <button id="link_site"> Visiter le site</button>
                         </form>
                     </div>
 

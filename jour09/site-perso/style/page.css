@@ -67,12 +67,12 @@ header {
     padding: 50px;
 }
 
-form[action="liste-naissance.html"] {
+.desciption form {
     display: flex;
     justify-content: center;
 }
 
-form[action="liste-naissance.html"] button:hover {
+#link_site {
     background-color: white;
     color:  #b97381;
     transition: .1s;

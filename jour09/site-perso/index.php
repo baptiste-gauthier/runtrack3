@@ -3,8 +3,9 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil</title>
+    <title> GAUTHIER Baptiste - Portfolio </title>
     <meta name="description" content="Baptiste GAUTHIER, étudiant dans le développement web Front End & Back End à l'école de La Plateforme_ à Marseille. Venez découvrir mon portfolio, en recherche d'alternance pour septembre 2021.">
+    <meta name="keywords" content="Baptiste,GAUTHIER,développeur,front-end, back-end, Marseille, web">
     <link rel="stylesheet" href="style/style_accueil.css">
     <link rel="stylesheet" href="style/global.css">
     <link rel="stylesheet" href="style/hover.css">
@@ -43,7 +44,7 @@
 
             <div class="contenu_pres">
                 <div class="message" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-class="appear" data-scroll-repeat="true">
-                    <div id="hello" style="display: none;" > Bonjour, je suis Baptiste Gauthier.</div>
+                    <h1 id="hello" style="display: none;" > Bonjour, je suis Baptiste Gauthier.</h1>
                     <div id="message_hello"></div>
                     <p id="message_pres"> Je suis actuellement étudiant dans le domaine du développement web.</p>
                 </div>
@@ -67,7 +68,7 @@
                 <div class="description vue">
                     <div class="content_des">
                         <h2> Actuellement à l'école de La Plateforme_ à Marseille, je suis en recherche d'alternance pour septembre 2021.</h2>
-                        <p> Passionné depuis toujours par le domaine informatique, j’ai décidé d’intégrer cette formation, qui propose une pédagogie par projet permettant de développer des compétences techniques dans le développement web tout en travaillant sur des projets concrets.
+                        <p> Passionné depuis toujours par le domaine informatique, j’ai décidé d’intégrer cette formation de développement web et web mobile, qui propose une pédagogie par projet permettant de développer des compétences techniques dans le développement web tout en travaillant sur des projets concrets.
                             </p>
                         <p>Je suis également titulaire d'un DUT Métiers du multimédia et de l’Internet. Cette formation m’a permis de mettre un premier pied dans le monde du numérique et du multimédia. J'ai pu aquérir grâce à ces deux ans des compétences en graphisme, web design, montage vidéo et motion design.</p>
                     </div>
@@ -82,9 +83,8 @@
 
                     <div class="rs">
                         <ul>
-                            <li><a href="https://www.instagram.com/?hl=fr"><i class="fa fa-instagram fa-lg"></i></a></li>
-                            <li><a href="https://www.facebook.com/"><i class="fa fa-facebook fa-lg"></i></a></li>
                             <li><a href="https://fr.linkedin.com/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                            <li><button id="btn_cv"> mon cv </button></li>
                         </ul>
                     </div>
                 </div>
@@ -170,8 +170,8 @@
         <section id="contact" data-scroll-section>
             <h1 class="titre" id="link_contact"> Contact</h1>
             <article class="contenu_contact">
-                <p> baptiste.gauthier@laplateforme.io </p>
-                <p> 0772139190 </p>
+                <h2> baptiste.gauthier@laplateforme.io </h2>
+                <h3> 0772139190 </h3>
                 <p>
                     <a class="github-button" href="https://github.com/baptiste-gauthier" aria-label="Github">GitHub</a>
                 </p>
@@ -182,21 +182,15 @@
     </main>
 
     <section id="scroll_footer" data-scroll-section>
-    <footer >
+    <footer>
         <nav class="contenu_footer" >
 
             <div class="rs">
-                <div>
-                    <a href="https://www.instagram.com/?hl=fr"><i class="fa fa-instagram fa-2x"></i></a>
-                </div>
 
                 <div>
                     <a href="https://fr.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a>
                 </div>
 
-                <div>
-                    <a href="https://fr.linkedin.com/"><i class="fa fa-facebook fa-2x"></i></a>
-                </div>
             </div>
 
         </nav>
