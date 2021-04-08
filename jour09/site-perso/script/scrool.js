@@ -7,12 +7,14 @@ var scroller = new LocomotiveScroll({
 
 $(window).resize(function(e) {
 
-    scroller.update();
-    //DeltaY of 1 so event is effectively triggered
-    var wheelEvent = new WheelEvent("mousewheel",{deltaY:1}); 
-    //Element selector used for locomotivePlugin
-    $("body")[0].dispatchEvent(wheelEvent);
-    //TO DO Trigger events for touch and ms touch events (touchmove, MSPointerMove)
+    setTimeout(function(){  scroller.update();
+        //DeltaY of 1 so event is effectively triggered
+        var wheelEvent = new WheelEvent("mousewheel",{deltaY:1}); 
+        //Element selector used for locomotivePlugin
+        $("body")[0].dispatchEvent(wheelEvent);
+        //TO DO Trigger events for touch and ms touch events (touchmove, MSPointerMove)
+    }, 100);
+   
 });
 
 const slider = document.querySelector('#link_about');
