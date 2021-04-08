@@ -52,6 +52,7 @@ header {
     border-radius: 2em ;
     border : none ; 
     color : white ; 
+    transition: .1s;
 }
 
 .contenu_projet h2,.contenu_projet h3,.contenu_projet p {
@@ -72,11 +73,9 @@ header {
     justify-content: center;
 }
 
-#link_site {
+#link_site:hover {
     background-color: white;
     color:  #b97381;
-    transition: .1s;
-    cursor: pointer;
 }
 
 /* bouton burger */
