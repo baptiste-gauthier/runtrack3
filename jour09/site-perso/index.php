@@ -20,7 +20,7 @@
 <body>
     
     <div class="cursor cursor--small"></div>
-    <canvas class="cursor cursor--canvas"></canvas>
+    <canvas class="cursor cursor--canvas" resize></canvas>
 
     <header id="link_header" >
         <article class="contenu_header">

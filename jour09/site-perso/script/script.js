@@ -193,7 +193,7 @@ for(var i = 0 ; i < buttonCheck.length ; i++)
   // console.log(buttonCheck[i]); 
   buttonCheck[i].addEventListener('click', function(e) { 
     
-    // initCursor();
+    initCursor();
     initCanvas("rgba(255, 255, 255, 1)");
 
     var placement = e.target.getAttribute('placement'); 
@@ -221,7 +221,7 @@ for(var i = 0 ; i < buttonCheck.length ; i++)
 }
 
 $(document).on('click', '.b_burger', function(){
-  // initCursor();
+  initCursor();
   initCanvas("rgba(0, 0, 0, 1)");
 
   $("#projet_flex").removeClass("animate__animated animate__slideInRight");
