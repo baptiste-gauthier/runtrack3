@@ -63,7 +63,7 @@
 
         <section id="about" data-scroll-section>
             <h1 class="titre" id="link_about"> About </h1>
-            <div class="contenu_about"  data-scroll data-scroll-speed="-2" >
+            <div class="contenu_about"  data-scroll data-scroll-speed="1" >
 
                 <div class="description vue">
                     <div class="content_des">
@@ -83,8 +83,8 @@
 
                     <div class="rs">
                         <ul>
-                            <li><a href="https://fr.linkedin.com/"><i class="fa fa-linkedin fa-lg"></i></a></li>
-                            <li><button id="btn_cv"> mon cv </button></li>
+                            <li><a href="https://www.linkedin.com/in/baptiste-gauthier-a02ab9210/"><i class="fa fa-linkedin fa-lg"></i></a></li>
+                            <li><a href="src/GAUTHIER_Baptiste_CV.pdf" id="btn_cv" target="blank_"> mon cv </a></li>
                         </ul>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
 
         <section id="portfolio" data-scroll-section >
             <h1 class="titre" id="link_portfolio" > Portfolio </h1>
-            <article class="contenu_portfolio" data-scroll data-scroll-speed="-1">
+            <article class="contenu_portfolio" data-scroll data-scroll-speed="1">
                 <!-- <div class="tri">
                     <ul>
                         <li> Runtrack1 (1)</li>
@@ -188,7 +188,7 @@
             <div class="rs">
 
                 <div>
-                    <a href="https://fr.linkedin.com/"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/baptiste-gauthier-a02ab9210/"><i class="fa fa-linkedin fa-2x"></i></a>
                 </div>
 
             </div>
